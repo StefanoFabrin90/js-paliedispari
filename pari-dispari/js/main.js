@@ -36,6 +36,9 @@ console.log(tot);
 
 // vincitore
 
+const win = checkOddEven(tot);
+console.log(`${win}`);
+
 
 
 
@@ -52,4 +55,5 @@ function checkOddEven(num) {
     if (num % 2 ===0){
         return 'pari';
     }
+    return 'dispari';
 }
