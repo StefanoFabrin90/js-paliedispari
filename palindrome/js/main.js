@@ -13,7 +13,7 @@ if (wordUser === wordReverse){
     document.querySelector('.word').innerHTML = `le due parole sono palindrome ${wordUser}:${wordReverse}`;
 } else {
     // console.log('parola non palindroma');
-    document.querySelector('.word').innerHTML = `le due paorle NON sono palindrome ${wordUser}:${wordReverse}`;
+    document.querySelector('.word').innerHTML = `le due parole NON sono palindrome ${wordUser}:${wordReverse}`;
 }
 
 

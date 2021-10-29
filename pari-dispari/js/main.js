@@ -18,7 +18,7 @@ console.log(EvenOdd);
 let gamer = parseInt( prompt('Inserire un numero da 1 a 5') );
 
 if ( (gamer < 1) || (gamer > 5) || isNaN(gamer) ) {
-    alert('Inserimento non valido, Assegnazione automatica : 3')
+    alert('Inserimento non valido, Assegnazione automatica : 1')
     gamer = 3;
 }
 console.log(gamer);
@@ -26,24 +26,20 @@ console.log(gamer);
 
 
 // PC
-for (let i = 0; 1 < 5; i ++){
+for (let i = 0; i < 5; i++){
 
-    const randNumber = NumberRandom (1, 5);
+    const randNumber = NumberRandom(1, 5);
     console.log(randNumber);
 }
 
+const res = gamer + ;
 
 
 
-
-
-
-
-
-// FUNZIONE
+// // FUNZIONE
 
 function NumberRandom (min, max) {
-    const rand = Math.floor(Math.random()*(max-min +1)) + min;
+     const rand = Math.floor(Math.random() * (max-min +1)) + min;
 
     return rand;
 }
