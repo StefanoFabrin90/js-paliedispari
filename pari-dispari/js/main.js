@@ -45,11 +45,8 @@ function NumberRandom (min, max) {
     return rand;
 }
 
-function Play (win) {
-    if (win % 2 === 0){
-        
-    } else {
-        
+function PariDispari (num) {
+    if (num % 2 ===0){
+        return 'pari';
     }
-    return 'pari'
 }
