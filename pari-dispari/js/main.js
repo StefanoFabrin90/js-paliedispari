@@ -37,6 +37,7 @@ console.log(tot);
 // vincitore
 
 
+
 // // FUNZIONE
 
 function NumberRandom (min, max) {
@@ -45,7 +46,7 @@ function NumberRandom (min, max) {
     return rand;
 }
 
-function PariDispari (num) {
+function checkOddEven(num) {
     if (num % 2 ===0){
         return 'pari';
     }
