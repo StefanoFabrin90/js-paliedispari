@@ -26,14 +26,15 @@ console.log(gamer);
 
 
 // PC
-for (let i = 0; i < 5; i++){
+const randNumber = NumberRandom(1, 5);
+console.log(randNumber);
 
-    const randNumber = NumberRandom(1, 5);
-    console.log(randNumber);
-}
+// totale
+const tot = gamer + randNumber;
+console.log(tot);
 
-const res = gamer + ;
 
+// vincitore
 
 
 // // FUNZIONE
@@ -42,4 +43,13 @@ function NumberRandom (min, max) {
      const rand = Math.floor(Math.random() * (max-min +1)) + min;
 
     return rand;
+}
+
+function Play (win) {
+    if (win % 2 === 0){
+        
+    } else {
+        
+    }
+    return 'pari'
 }
