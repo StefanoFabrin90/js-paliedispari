@@ -7,37 +7,54 @@
 
 
 // GAMER
-let EvenOdd = prompt ('Inserire pari o dispari');
 
-if ( (EvenOdd !== 'pari') && (EvenOdd !== 'dispari') ) {
+const btnPlay = document.querySelector('.btnPlay');
+console.log(btnPlay);
+
+btnPlay.addEventListener('click',function(){
+    let EvenOdd = prompt ('Inserire "pari" o "dispari"');
+
+    if ( (EvenOdd !== 'pari') && (EvenOdd !== 'dispari') ) {
     alert('Inserimento non valido, Assegnazione automatica: pari')
     EvenOdd = 'pari';
-}
-console.log(EvenOdd);
+    }
+    console.log(EvenOdd);
 
-let gamer = parseInt( prompt('Inserire un numero da 1 a 5') );
+    let gamer = parseInt( prompt('Inserire un numero da 1 a 5') );
 
-if ( (gamer < 1) || (gamer > 5) || isNaN(gamer) ) {
+    if ( (gamer < 1) || (gamer > 5) || isNaN(gamer) ) {
     alert('Inserimento non valido, Assegnazione automatica : 1')
     gamer = 3;
-}
-console.log(gamer);
+    }
+    console.log(gamer);
+
+        // PC
+    const randNumber = NumberRandom(1, 5);
+    console.log(randNumber);
+
+    // totale
+    const tot = gamer + randNumber;
+        console.log(tot);
+
+
+    // vincitore
+
+    const win = checkOddEven(tot);
+    // console.log(`${win}`);
+    if (win === EvenOdd) {
+        // console.log('hai vinto');
+        document.getElementById('win').innerHTML = `Il numero estratto è: ${tot} - Complimenti hai vinto! Il numero è ${win}`;
+    } else {
+        // console.log('ha vinto il pc');
+        document.getElementById('win').innerHTML = `Il numero estratto è: ${tot} - Ritenta sarai più fortunato!`;
+    }
+})
 
 
 
-// PC
-const randNumber = NumberRandom(1, 5);
-console.log(randNumber);
-
-// totale
-const tot = gamer + randNumber;
-console.log(tot);
 
 
-// vincitore
 
-const win = checkOddEven(tot);
-console.log(`${win}`);
 
 
 
